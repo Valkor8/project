@@ -1,10 +1,19 @@
 .page-body {
-    width: 320px;
+    max-width: 1380px;
+    padding: 0 20px;
     background-color: azure;
+    margin: 0 auto;
 
     @media (min-width: 768px) {
-        width: 640px;
-        margin: 0 64px;
-        background-color: red;
+        width: 708px;
+        padding: 0 30px;
+    }
+}
+
+.main-navigation__list {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
