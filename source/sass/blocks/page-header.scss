@@ -1,0 +1,28 @@
+.page-header__wrapper {
+    @media (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+
+    }
+}
+
+.page-logo {
+    align-items: center;
+    @media (min-width: 768px) {
+       width: 174px;
+    }
+}
+
+@media (min-width: 768px){
+    .page-logo__toggle {
+        display: none;
+    }
+}
+
+.main-navigation {
+    @media (min-width: 768px) {
+        width: 440px;
+     }
+}
