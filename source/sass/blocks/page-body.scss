@@ -1,17 +1,26 @@
+$mobile-width: 280px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
 .page-body {
-    max-width: 1380px;
+    max-width: 1220px;
     padding: 0 20px;
     background-color: azure;
     margin: 0 auto;
 
-    @media (min-width: 768px) {
-        width: 708px;
+    @media (min-width: $tablet-width) {
+        width: auto;
         padding: 0 30px;
     }
+
+    @media (min-width: $desktop-width) {
+        padding: 0 110px;
+    }
+
 }
 
 .main-navigation__list {
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
