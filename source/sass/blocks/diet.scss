@@ -13,6 +13,7 @@
 .diet-style {
     max-width: auto;
     padding-left: 20px;
+    margin-bottom: 20px;
     // padding-right: 33px;
 
     background-color: #F2F2F2;
@@ -23,6 +24,15 @@
 }
 
 .diet-style p {
-    max-width: 447px;
+    margin-right: 33px;
+
+    @media (min-width: $tablet-width) {
+        margin-right: 280px;
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 447px;
+        margin-right: 60px;
+    }
 }
 
