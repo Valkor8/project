@@ -9,17 +9,20 @@
     <body class="page-body">
         <header class="page-header">
             <div class="page-header__wrapper">
-                <div class="page-header__logo page-header__nav-style">
-                    <a class="page-header__logo-1" href="#"><img src="img/logo-mobile.png" alt=""></a>
-                    <a class="page-header__logo-2" href="#"><img src="img/logo 2.png " alt=""></a>
-                    <button class="page-header__logo-toggle" type="button"></button>
-                </div>
-                <nav class="page-header__navigation">
-                    <ul class="page-header__navigation-list">
-                        <li class="page-header__navigation-item page-header__nav-style"><a href="index.html">Главная</a></li>
-                        <li class="page-header__navigation-item page-header__nav-style"><a href="catalog.html"></a>Каталог продукции</li>
-                        <li class="page-header__navigation-item page-header__nav-style"> <a href="form.html"></a>Подбор программы</li>
-                    </ul>
+                <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+                    <div class="page-header__logo page-header--nav-style">
+                        <a class="page-header__logo-1" href="#"><img src="img/logo-mobile.png" alt=""></a>
+                        <a class="page-header__logo-2" href="#"><img src="img/logo 2.png " alt=""></a>
+                        <button class="page-header__logo-toggle" type="button"></button>
+                    </div>
+                    <div class="page-header__navigation">
+                        <nav class="page-header__navigation">
+                            <ul class="page-header__navigation-list">
+                                <li class="page-header__navigation-item page-header--nav-style"><a href="index.html">Главная</a></li>
+                                <li class="page-header__navigation-item page-header--nav-style"><a href="catalog.html">Каталог продукции</a></li>
+                                <li class="page-header__navigation-item page-header--nav-style"> <a href="form.html">Подбор программы</a></li>
+                            </ul>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -163,5 +166,6 @@
             </div>
             </div>
         </footer>
+        <script src="js/mobile-menu.js"></script>
     </body>
 </html>
