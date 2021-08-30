@@ -1,0 +1,78 @@
+.form {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    ul {
+        padding: 0;
+
+    }
+
+    li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 13px;
+    }
+
+    h2 {
+        text-transform: initial;
+        font-size: 24px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+}
+
+.form__cat-information__label,
+.form__cat-owner-contacts__label {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    input {
+        width: auto;
+        min-height: 46px;
+        flex-grow: 1;
+
+        font-family: 'Oswald';
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+
+    }
+
+    span {
+        padding-right: 15px;
+        display: block;
+    }
+
+    input::-webkit-input-placeholder {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000000;
+      }
+
+      input:-ms-input-placeholder {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    input::-moz-placeholder {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    input:-moz-placeholder {
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+}
