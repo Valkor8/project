@@ -17,15 +17,24 @@
     font-weight: 500;
 }
 
+body,
+*,
+h1, h2, h3 h4, h5 h6 {
+    box-sizing: border-box;
+}
+
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main.scss";
+@import "blocks/main-header.scss";
 @import "blocks/page-footer.scss";
 
 @import "blocks/diet.scss";
 @import "blocks/instruction.scss";
+@import "blocks/example.scss";
 
 //form.html
 @import "blocks/form-header.scss";
 @import "blocks/form.scss";
+@import "blocks/form-main.scss";
 

@@ -1,23 +1,29 @@
 
 .instruction__wrapper {
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        padding: 0 20px;
 
         @media (min-width: $tablet-width) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            padding: 0 30px;
         }
         @media (min-width: $desktop-width) {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-
+            padding: 0 110px;
         }
-    }
     li {
         margin-bottom: 20px;
         padding-left: 80px;
     }
+}
+.instruction__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $desktop-width) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 
 }

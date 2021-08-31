@@ -3,16 +3,15 @@
     line-height: 18px;
     text-transform: uppercase;
 
-    ul {
-        padding: 0;
-
-    }
-
     li {
         list-style: none;
         padding: 0;
         margin: 0;
         margin-bottom: 13px;
+
+        &:last-child {
+            margin: 0;
+        }
     }
 
     h2 {
@@ -39,6 +38,8 @@
         font-size: 16px;
         line-height: 18px;
         text-transform: uppercase;
+
+        border: 1px solid #E7E7E7;
 
     }
 
@@ -73,6 +74,79 @@
         line-height: 18px;
         text-transform: uppercase;
         color: #000000;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 570px;
+    }
+
+}
+
+.form__cat-information {
+    padding: 0 20px;
+    margin: 0;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 66px 0 70px;
+        margin-bottom: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 0 110px;
+        padding-right: 0;
+        margin: 0;
+    }
+
+}
+
+.form__cat-information__item {
+
+    @media (min-width: $desktop-width) {
+        width: 570px;
+    }
+}
+
+.form__radio {
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+
+    @media (min-width: $tablet-width) {
+        border: 1px solid #E7E7E7;
+        margin-left: 70px;
+        margin-right: 66px;
+
+    }
+    @media (min-width: $desktop-width) {
+        width: 570px;
+        margin-right: 110px;
+    }
+
+}
+
+.form__radio-item {
+    margin: 0;
+    padding: 25px 20px;
+}
+
+.form__container {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.form__cat-owner-contacts {
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 66px 0 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 0 110px;
+        display: flex;
+        justify-content: space-between;
     }
 
 }
