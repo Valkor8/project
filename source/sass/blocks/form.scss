@@ -150,3 +150,155 @@
     }
 
 }
+
+.form__green-line-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.form__h2 {
+    font-family: 'Oswald';
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 400;
+
+    padding-left: 20px;
+    padding-right: 23px;
+
+    @media (min-width: $tablet-width) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: 40px;
+    }
+ }
+
+
+.form__green-line-left {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #68B738;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 70px;
+    }
+}
+
+.form__green-line-rigth {
+    height: 2px;
+    background-color: #68B738;
+    flex-grow: 1;
+
+    margin: auto;
+    margin-top: 35px;
+}
+
+.form__h2-contacts {
+    width: 227px;
+
+    @media (min-width: $tablet-width) {
+        width: auto;
+    }
+}
+
+.form__input-comment {
+    margin: 0 20px;
+
+    @media (min-width: $tablet-width) {
+        margin: 0 66px 0 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0 110px;
+    }
+}
+
+.form__comment {
+    width: 100%;
+    min-width: 280px;
+    min-height: 150px;
+    border: 1px solid #E7E7E7;
+
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.form__composition {
+    padding: 0;
+    margin: 0 20px;
+
+    @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+
+        margin: 0 66px 0 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0 110px;
+    }
+}
+
+.form__button {
+    width: 280px;
+    height: 40px;
+
+    background-color: #68B738;
+    color: #ffffff;
+
+    border: none;
+
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+        width: 570px;
+    }
+}
+
+.form__footnote {
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-transform: initial;
+
+    margin-left: 60px;
+
+    @media (min-width: $desktop-width) {
+        margin-left: 80px;
+    }
+}
+
+.form__button-and-footnote {
+    margin: 0 20px;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        align-items: center;
+
+        margin: 0 66px 0 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin: 0 110px;
+    }
+}
