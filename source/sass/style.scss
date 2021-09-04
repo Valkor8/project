@@ -23,6 +23,22 @@ h1, h2, h3 h4, h5 h6 {
     box-sizing: border-box;
 }
 
+.button {
+    width: 280px;
+    height: 40px;
+
+    background-color: #68B738;
+    color: #ffffff;
+
+    border: none;
+
+    font-family: 'Oswald';
+    font-size: 16px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+}
+
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main.scss";
@@ -37,4 +53,6 @@ h1, h2, h3 h4, h5 h6 {
 @import "blocks/form-header.scss";
 @import "blocks/form.scss";
 @import "blocks/form-main.scss";
+
+
 

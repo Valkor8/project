@@ -9,3 +9,72 @@
         padding: 0 110px;
     }
 }
+
+.main-header {
+    width: 320px;
+    min-height: 480px;
+    margin: auto;
+    position: relative;
+
+    background-image:
+        // url(../../img/main-header/index-can-mobile.png),
+        url(../../img/main-header/index-background-desktop-2.jpg);
+    background-repeat: no-repeat;
+    background-size:
+        // 280px auto,
+        320px auto;
+    background-position:
+        // center 167px,
+        0 0;
+
+    @media (min-resolution: 2dppx) {
+        background-image: url(../../img/main-header/index-background-desktop-2@2x.jpg);
+    }
+
+    @media (min-width: $tablet-width) {
+
+    }
+}
+
+.main-header__description {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0;
+
+    h2 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        margin: 0;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+
+}
+
+.main-header__box {
+    min-height: 302px;
+    min-width: 320px;
+    background-color: #68B738;
+    opacity: 0.85;
+}
+
+.main-header__can {
+    position: absolute;
+    width: 280px;
+    height: 270px;
+    top: 167px;
+    left: 50%;
+    margin-left: -135px;
+}
+
+.main-header__button {
+    margin-left: 20px;
+    margin-top: 138px;
+}
