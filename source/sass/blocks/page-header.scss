@@ -2,6 +2,14 @@
     min-width: 320px;
 }
 
+.page-header__wrapper {
+    margin-top: 12px;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 25px;
+    }
+}
+
 .page-header__nav {
 
     @media (min-width: $tablet-width) {
