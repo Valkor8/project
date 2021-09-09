@@ -7,43 +7,53 @@
         <title>Кэт энерджи</title>
     </head>
     <body class="page-body">
-        <header class="page-header">
-            <div class="page-header__wrapper">
-                <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
-                    <div class="page-header__logo page-header--nav-style">
-                        <a class="page-header__logo-1" href="index.html"><img src="img/logo/logo-mobile.png" alt=""></a>
-                        <a class="page-header__logo-2" href="index.html"><img src="img/logo/logo-2.svg" alt="" width="101" height="18"></a>
-                        <button class="page-header__logo-toggle" type="button"></button>
-                    </div>
-                    <div class="page-header__navigation">
-                        <nav class="page-header__container">
-                            <ul class="page-header__navigation-list">
-                                <li class="page-header__navigation-item page-header--nav-style page-header__navigation--active"><a href="index.html">Главная</a></li>
-                                <li class="page-header__navigation-item page-header--nav-style"><a href="catalog.html">Каталог продукции</a></li>
-                                <li class="page-header__navigation-item page-header--nav-style"> <a href="form.html">Подбор программы</a></li>
-                            </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
+        <div class="page-body__wrapper">
+            <header class="page-header">
+                <div class="page-header__wrapper">
+                    <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+                        <div class="page-header__logo page-header--nav-style">
+                            <a class="page-header__logo-1" href="index.html"><img src="img/logo/logo-mobile.png" alt=""></a>
+                            <a class="page-header__logo-2" href="index.html"><img src="img/logo/logo-2.svg" alt="" width="101" height="18"></a>
+                            <button class="page-header__logo-toggle" type="button"></button>
+                        </div>
+                        <div class="page-header__navigation">
+                            <nav class="page-header__container">
+                                <ul class="page-header__navigation-list">
+                                    <li class="page-header__navigation-item page-header--nav-style page-header__navigation--active"><a href="index.html">Главная</a></li>
+                                    <li class="page-header__navigation-item page-header--nav-style"><a href="catalog.html">Каталог продукции</a></li>
+                                    <li class="page-header__navigation-item page-header--nav-style"> <a href="form.html">Подбор программы</a></li>
+                                </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
         <main class="main index-main">
             <div class="main__wrapper">
                 <section class="main-header">
-                    <div class="main-header__box">
-                        <div class="main-header__wrapper">
-                            <div class="main-header__description">
+                    <div class="main-header__wrapper">
+                        <div class="main-header__description">
                                 <h2>Функциональное<br> питание для котов</h2>
                                 <p>Занялся собой? Займись и котом!</p>
+                        </div>
+                        <div class="main-header__box">
+                            <div class="main-header__fill"></div>
+                            <div class="main-header__cat">
+                            <picture>
+                                <img src="img/main-header/index-background-mobile-2.jpg" alt="">
+                            </picture>
                             </div>
                         </div>
                     </div>
                     <div class="main-header__can">
                         <picture>
-                            <source media="(min-width: 768px)" srcset="img/main-header/index-can-tablet.png 1x, img/main-header/index-can-tablet.png@2x 2x">
+                            <source media="(min-width: 1440px)" srcset="img/main-header/index-can.png 1x, img/main-header/index-can@2x.png 2x">
+                            <source media="(min-width: 768px)" srcset="img/main-header/index-can-tablet.png 1x, img/main-header/index-can-tablet@2x.png 2x">
                             <img src="img/main-header/index-can-mobile.png" srcset="img/main-header/index-can-mobile@2x.png 2x" alt="">
                          </picture>
                     </div>
+
                     <button class="button main-header__button" type="button">Подобрать программу</button>
+                    <div class="main-header__container"></div>
                 </section>
             </div>
                 <section class="diet">
@@ -178,6 +188,7 @@
             </div>
             </div>
         </footer>
+    </div>
         <script src="js/mobile-menu.js"></script>
     </body>
 </html>
