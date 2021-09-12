@@ -24,30 +24,69 @@
     max-width: auto;
     padding-left: 20px;
     margin-bottom: 20px;
-    // padding-right: 33px;
 
     background-color: #F2F2F2;
+
+    @media (min-width: $tablet-width) {
+        padding: 0  50px;
+    }
 
     @media (min-width: $desktop-width) {
         width: 550px;
     }
 }
 
-.diet-style p {
-    margin-right: 33px;
+.diet__header {
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    order: 1;
 
     @media (min-width: $tablet-width) {
-        margin-right: 280px;
+        width: 100%;
+        margin-top: 75px;
+        font-size: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: auto;
+        margin: 0;
+        margin-left: 50px;
+    }
+}
+
+.diet__description {
+    font-family: 'Arial';
+    font-style: 14px;
+    line-height: 18px;
+    min-width: 227px;
+
+    margin: 0;
+    padding-right: 33px;
+    margin-bottom: 15px;
+    padding-bottom: 23px;
+
+    border-bottom: 1px solid #D9D9D9;
+    order: 1;
+
+    @media (min-width: $tablet-width) {
+        width: 60.6%;
+        border: 0;
     }
 
     @media (min-width: $desktop-width) {
         max-width: 447px;
-        margin-right: 60px;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 23px;
+
     }
 }
 
-
-.diet-slimming__fill {
+.diet__fill {
     width: 50px;
     height: 50px;
     background-color: #68B738;
@@ -56,12 +95,103 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-top: 21px;
+    margin-right: 10px;
+    margin-bottom: 22px;
+
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+        order: 2;
+        min-width: 200px;
+        min-height: 200px;
+        margin-top: -40px;
+        margin-left: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        order: 1;
+        min-width: 100px;
+        min-height: 100px;
+        margin-left: 0;
+        margin-top: 41px;
+    }
 }
 
-.diet-slimming__icon {
+.diet__icon {
     width: 36px;
     height: 50px;
-    background-image: url(../../img/diet/Vector.svg);
-    background-repeat: no-repeat;
-    margin-top: -5px;
+    position: absolute;
+    top: calc(50% - 25px);
+    margin-top: -2px;
+    @media (min-width: $tablet-width) {
+        width: 140px;
+        height: 192px;
+        top: calc(50% - 96px);
+        margin-top: -15px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        top: calc(50% - 48.5px);
+        margin-top: -5px;
+    }
+
+}
+
+.diet__icon--pro {
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    top: calc(50% - 14px);
+    margin-top: 0;
+
+    @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 112px;
+        top: calc(50% - 56px);
+        margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        top: calc(50% - 28px);
+        margin-top: 0;
+    }
+}
+
+.diet__box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.diet__button {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+        content: "";
+
+        width: 32px;
+        height: 10px;
+
+        background-image: url(../../img/diet/icon_arrow.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+
+        left: 103px;
+        top: calc(50% - 5px);
+    }
 }
