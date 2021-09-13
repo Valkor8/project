@@ -12,13 +12,20 @@
                 <div class="page-header__wrapper">
                     <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
                         <div class="page-header__logo page-header--nav-style">
-                            <a class="page-header__logo-1" href="index.html"><img src="img/logo/logo-mobile.png" alt=""></a>
-                            <a class="page-header__logo-2" href="index.html"><img src="img/logo/logo-2.svg" alt="" width="101" height="18"></a>
+                            <a class="page-header__logo-1" href="index.html">
+                                <picture>
+                                    <source media="(min-width: 1440px)" srcset="img/page-header/logo-desktop-2.svg">
+                                    <source media="(min-width: 768px)" srcset="img/page-header/logo-tablet-2.svg">
+                                    <img src="img/page-header/logo-mobile.svg" alt="">
+                                </picture>
+
+                            </a>
+                            <a class="page-header__logo-2" href="index.html"><img src="img/page-header/logo-2.svg" alt="" width="101" height="18"></a>
                             <button class="page-header__logo-toggle" type="button"></button>
                         </div>
                         <div class="page-header__navigation">
                             <nav class="page-header__container">
-                                <ul class="page-header__navigation-list">
+                                <ul class="page-header__navigation-list page-header__navigation-list--desktop-white">
                                     <li class="page-header__navigation-item page-header--nav-style page-header__navigation--active"><a href="index.html">Главная</a></li>
                                     <li class="page-header__navigation-item page-header--nav-style"><a href="catalog.html">Каталог продукции</a></li>
                                     <li class="page-header__navigation-item page-header--nav-style"> <a href="form.html">Подбор программы</a></li>
