@@ -1,4 +1,17 @@
 
+.instruction {
+    h2 {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 400;
+
+        @media (min-width: $tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+        }
+    }
+
+}
 .instruction__wrapper {
         padding: 0 20px;
 
@@ -8,15 +21,14 @@
         @media (min-width: $desktop-width) {
             padding: 0 110px;
         }
-    li {
-        margin-bottom: 20px;
-        padding-left: 80px;
-    }
 }
+
 .instruction__list {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    align-items: center;
 
     @media (min-width: $tablet-width) {
         display: grid;
@@ -26,4 +38,110 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+}
+
+.instruction__item {
+    position: relative;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 18px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: center;
+
+    p {
+        margin: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+        flex-direction: column;
+        align-items: start;
+
+        font-size: 16px;
+        line-height: 24px;
+
+        min-height: 280px;
+        padding-top: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-right: 82.6px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.instruction__item--1 {
+    @media (min-width: $tablet-width) {
+        width: 230px;
+        background-image: url(../../img/instruction/1.svg);
+        background-repeat: no-repeat;
+        background-position: 124px 40px;
+    }
+}
+
+.instruction__item--2 {
+    @media (min-width: $tablet-width) {
+        width: 246px;
+        background-image: url(../../img/instruction/2.svg);
+        background-repeat: no-repeat;
+        background-position: 122px 40px;
+    }
+}
+
+.instruction__item--3 {
+    @media (min-width: $tablet-width) {
+        width: 247px;
+        background-image: url(../../img/instruction/3.svg);
+        background-repeat: no-repeat;
+        background-position: 122px 40px;
+    }
+}
+
+.instruction__item--4 {
+    @media (min-width: $tablet-width) {
+        width: 249px;
+        background-image: url(../../img/instruction/4.svg);
+        background-repeat: no-repeat;
+        background-position: 122px 40px;
+    }
+}
+
+.instruction__icon {
+    width: 60px;
+    height: 60px;
+
+    background-color: #68B738;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+
+        margin-bottom: 31px;
+    }
+}
+
+.instuction__item__br-tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: inline;
+    }
+}
+
+.instuction__item__br-mobile {
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
 }
