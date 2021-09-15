@@ -1,11 +1,166 @@
+.example {
+    h2 {
+        font-size: 36px;
+        line-height: 40px;
+        font-weight: 400;
+
+        margin: 0;
+        margin-bottom: 33px;
+
+        @media (min-width: $tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 63px;
+        }
+    }
+}
+
 .example__wrapper {
     padding: 0 20px;
+    margin-top: 27px;
 
     @media (min-width: $tablet-width) {
         padding: 0 30px;
+        margin-top: 43px;
     }
 
     @media (min-width: $desktop-width) {
         padding: 0 110px;
+    }
+}
+
+.example__description {
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    min-width: 280px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 436px;
+        margin-bottom: 70px;
+    }
+}
+
+.example__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 60px;
+    }
+}
+
+.example__result {
+    width: 124px;
+    height: 56px;
+    border: 1px solid #CDCDCD;
+    border-radius: 5px;
+
+    font-size: 24px;
+    line-height: 24px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 37px;
+
+        margin-right: 42px;
+        width: 162px;
+        height: 72px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.example__result-element {
+    font-family: "Arial";
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+
+    text-align: center;
+    position: absolute;
+    width: 87px;
+    top: 46px;
+    left: calc(50% - 43.5px);
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+        font-size: 14px;
+        line-height: 14px;
+        width: 114px;
+        left: calc(50% - 57px);
+        top: 62px;
+
+        br {
+            display: none;
+        }
+    }
+}
+
+.example__element--mod {
+    @media (min-width: $tablet-width) {
+        width: 142px;
+        left: calc(50% - 71px);
+    }
+}
+
+.example__nutrition-costs {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    width: 188px;
+    margin: auto;
+    margin-top: 34px;
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        flex-direction: column;
+
+        margin: 0;
+        text-align: end;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 436px;
+        flex-direction: row;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 9px;
+
+        @media (min-width: $desktop-width) {
+            margin-right: 63px;
+        }
+    }
+}
+
+.example__container {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (min-width: $desktop-width) {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
