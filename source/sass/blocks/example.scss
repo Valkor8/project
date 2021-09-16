@@ -1,4 +1,10 @@
 .example {
+    background-color: #EAEAEA;
+
+    @media (min-width: $tablet-width) {
+        background-color: inherit;
+    }
+
     h2 {
         font-size: 36px;
         line-height: 40px;
@@ -16,16 +22,16 @@
 }
 
 .example__wrapper {
-    padding: 0 20px;
+    // padding: 0 20px;
     margin-top: 27px;
 
     @media (min-width: $tablet-width) {
-        padding: 0 30px;
+        // padding: 0 30px;
         margin-top: 43px;
     }
 
     @media (min-width: $desktop-width) {
-        padding: 0 110px;
+        // padding: 0 110px;
     }
 }
 
@@ -97,7 +103,7 @@
     width: 87px;
     top: 46px;
     left: calc(50% - 43.5px);
-    background-color: #ffffff;
+    background-color: #EAEAEA;
 
     @media (min-width: $tablet-width) {
         font-size: 14px;
@@ -105,6 +111,7 @@
         width: 114px;
         left: calc(50% - 57px);
         top: 62px;
+        background-color: #ffffff;
 
         br {
             display: none;
@@ -153,7 +160,9 @@
 }
 
 .example__container {
+    padding: 0 20px;
     @media (min-width: $tablet-width) {
+        padding: 0 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -162,5 +171,61 @@
     @media (min-width: $desktop-width) {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+.example__image--before {
+    width: 311px;
+    height: 232px;
+
+    @media (min-width: $tablet-width) {
+        width: 677px;
+        height: 520px;
+    }
+}
+
+.example__image--after {
+    display: none;
+}
+
+.example__slider-condition {
+    margin: auto;
+    width: 228px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.example__slider-after-icon,
+.example__slider-before-icon {
+    display: none;
+}
+
+.example__slider--active {
+    display: block;
+}
+
+.example__background {
+    position: relative;
+    height: 300px;
+    margin-top: 42px;
+    @media (min-width: $tablet-width) {
+        height: 462px;
+        margin-top: 250px;
+        background: #EAEAEA;
+    }
+}
+
+.example__slider {
+    position: absolute;
+    left: calc(50% - 155.5px);
+
+    @media (min-width: $tablet-width) {
+        height: 620px;
+        left: calc(50% - 338.5px);
+        bottom: 0;
     }
 }

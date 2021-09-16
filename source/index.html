@@ -153,13 +153,26 @@
                             </div>
                             <div class="example__nutrition-costs"><p>Затраты на питание:</p> <p>15 000 руб.</p></div>
                         </div>
-                        <div class="example__before-and-after slider">
-                            <img class="example__image example__image--before slider-image" src="img/before-mobile 1.png" alt="" width="311" height="232">
-                            <img class="example__image example__image--after slider-image" src="img/after-mobile 1.png" alt="" width="250" height="240">
-                            <div class="example__before-and-after__condition">
-                                <b>Было</b>
-                                <button class="example__slider-button" type="button"><img src="img/slider.png" alt=""></button>
-                                <b>Стало</b>
+                        <div class="example__background">
+                            <div class="example__slider">
+                                <div class="example__slider-image">
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="img/example/cat-fat.png 1x, img/example/cat-fat@2x.png 2x">
+                                        <img class="example__image example__image--before slider-image" src="img/example/before-mobile.png" srcset="img/example/before-mobile@2x.png 2x" alt="">
+                                    </picture>
+                                    <picture>
+                                        <source media="(min-width: 768px)" srcset="img/example/cat-skinny.png 1x, img/example/cat-skinny@2x.png 2x">
+                                        <img class="example__image example__image--after slider-image" src="img/example/after-mobile.png" srcset="img/example/after-mobile@2x.png 2x" alt="">
+                                    </picture>
+                                </div>
+                                <div class="example__slider-condition">
+                                    <span>Было</span>
+                                    <button class="example__slider-button" type="button">
+                                        <img class="example__slider-before-icon example__slider--active" src="img/example/slider-mobile-before.png" alt="">
+                                        <img class="example__slider-after-icon" src="img/example/slider-mobile-after.png" alt="">
+                                    </button>
+                                    <span>Стало</span>
+                                </div>
                             </div>
                         </div>
                     </div>
