@@ -1,0 +1,22 @@
+.copyright {
+    min-width: 280px;
+    min-height: 78px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+        min-width: 163px;
+    }
+
+    a {
+        color: #444444;
+        text-decoration: none;
+    }
+}
+
+.copyright__link,
+.copyright__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

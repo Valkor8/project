@@ -4,14 +4,23 @@
 }
 
 .page-footer__container {
+    padding: 0 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @media (min-width: $tablet-width) {
+        padding: 0 30px;
+
         flex-direction: row;
     }
+
+    @media (min-width: $desktop-width) {
+        padding: 0 110px;
+    }
 }
+
 
 .social__list {
     list-style: none;
@@ -24,23 +33,10 @@
     padding: 0;
 }
 
-.page-footer__container {
-        padding: 0 20px;
-
-        @media (min-width: $tablet-width) {
-            padding: 0 30px;
-        }
-
-        @media (min-width: $desktop-width) {
-            padding: 0 110px;
-        }
-}
-
 .page-footer__logo {
     min-width: 280px;
     min-height: 80px;
     margin: 0;
-    // margin-top: 39px;
     padding: 0;
 
     display: flex;
@@ -53,21 +49,73 @@
 
 }
 
+.page-footer__cooperation {
+    position: relative;
+}
+
 .page-footer__cooperation__wrapper {
     padding: 0 20px;
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    min-height: 114px;
+
     @media (min-width: $tablet-width) {
-        padding: 0 30px;
+        padding: 0 70px;
+
+        min-height: 200px;
     }
 
     @media (min-width: $desktop-width) {
         padding: 0 110px;
+
+        position: absolute;
+        width: 570px;
+        top: 95px;
+        left: 110px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+
+        text-transform: uppercase;
+
+        @media (min-width: $tablet-width) {
+            font-size: 20px;
+        }
+    }
+}
+
+.footer__adress {
+    display: block;
+
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+    }
+}
+
+.fage-footer__city {
+    @media (min-width: $tablet-width) {
+        display: block;
+        margin-top: 20px;
     }
 }
 
 
 .page-footer__social {
-    width: auto;
+    min-width: 280px;
     min-height: 62px;
     border-top: 1px solid #D9D9D9;
     border-bottom: 1px solid #D9D9D9;

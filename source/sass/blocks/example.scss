@@ -22,16 +22,23 @@
 }
 
 .example__wrapper {
-    // padding: 0 20px;
     margin-top: 27px;
 
     @media (min-width: $tablet-width) {
-        // padding: 0 30px;
         margin-top: 43px;
+    }
+}
+
+.example__flex-container,
+.example h2 {
+    padding: 0 20px;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 30px;
     }
 
     @media (min-width: $desktop-width) {
-        // padding: 0 110px;
+        padding: 0 110px;
     }
 }
 
@@ -50,6 +57,7 @@
     @media (min-width: $desktop-width) {
         width: 436px;
         margin-bottom: 70px;
+        margin-top: 70px;
     }
 }
 
@@ -116,6 +124,10 @@
         br {
             display: none;
         }
+    }
+
+    @media (min-width: $desktop-width) {
+        background-color: #EAEAEA;
     }
 }
 
@@ -188,15 +200,42 @@
     display: none;
 }
 
+.example__slider {
+    position: absolute;
+    left: calc(50% - 155.5px);
+
+    @media (min-width: $tablet-width) {
+        height: 620px;
+        left: calc(50% - 338.5px);
+        bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: -190px;
+        left: -750px;
+    }
+}
+
 .example__slider-condition {
     margin: auto;
     width: 228px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
+
+    @media (min-width: $tablet-width) {
+        width: 580px;
+        font-size: 20px;
+        margin-bottom: 64px;
+    }
+}
+
+.example__slider-button {
+    margin: 0;
 }
 
 .example__slider-after-icon,
@@ -217,15 +256,18 @@
         margin-top: 250px;
         background: #EAEAEA;
     }
+
+    @media (min-width: $desktop-width) {
+        margin: 0;
+    }
 }
 
-.example__slider {
-    position: absolute;
-    left: calc(50% - 155.5px);
 
-    @media (min-width: $tablet-width) {
-        height: 620px;
-        left: calc(50% - 338.5px);
-        bottom: 0;
+
+.example__flex {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        background-color: #F2F2F2;
     }
 }
