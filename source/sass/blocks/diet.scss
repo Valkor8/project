@@ -183,6 +183,10 @@
     position: relative;
     cursor: pointer;
 
+    &:active {
+        opacity: 0.3;
+    }
+
     &::after {
         content: "";
 
@@ -200,4 +204,13 @@
     @media (min-width: $tablet-width) {
         margin-bottom: 53px;
     }
+}
+
+.diet__button:hover::after,
+.diet__button:focus::after {
+    background-image: url(../img/diet/icon_arrow_big.svg);
+}
+
+.diet__button:active::after {
+    opacity: 0.3;
 }

@@ -37,6 +37,15 @@ h1, h2, h3 h4, h5 h6 {
     line-height: 18px;
 
     text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+        background-color: #5EAA2F;
+    }
+
+    &:active {
+        color: rgba(255, 255, 255, 0.3);
+    }
 }
 
 @import "blocks/page-body.scss";

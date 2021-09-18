@@ -71,6 +71,18 @@
     }
 }
 
+.page-header__logo-1,
+.page-header__logo-2,
+.page-footer__logo {
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+
 .page-header__logo-2  {
     @media (min-width: $tablet-width) {
         display: none;
@@ -156,6 +168,14 @@
     li {
         list-style: none;
         margin: 0;
+
+        &:hover,
+        &:focus {
+            opacity: 0.6;
+        }
+        &:active {
+            opacity: 0.3;
+        }
     }
     @media (min-width: $tablet-width) {
         display: flex;

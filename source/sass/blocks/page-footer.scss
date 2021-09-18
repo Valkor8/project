@@ -12,6 +12,7 @@
 
     @media (min-width: $tablet-width) {
         padding: 0 30px;
+        min-height: 150px;
 
         flex-direction: row;
     }
@@ -34,9 +35,9 @@
 }
 
 .page-footer__logo {
-    min-width: 280px;
-    min-height: 80px;
-    margin: 0;
+    margin: auto;
+    margin-top: 39px;
+    margin-bottom: 32px;
     padding: 0;
 
     display: flex;
@@ -45,6 +46,7 @@
 
     @media (min-width: $tablet-width) {
         min-width: 128px;
+        margin: 0;
     }
 
 }
@@ -131,21 +133,4 @@
 
 }
 
-.page-footer__copyright {
-    min-width: 280px;
-    min-height: 78px;
-    display: flex;
-    justify-content: space-between;
 
-    @media (min-width: $tablet-width) {
-        min-width: 163px;
-    }
-
-}
-
-.copyright__link,
-.copyright__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
