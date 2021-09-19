@@ -12,5 +12,4 @@ navBtnToggle.addEventListener("click", function(evt) {
         nav.classList.remove("page-header__nav--opened");
         nav.classList.add("page-header__nav--closed");
     }
-
 });

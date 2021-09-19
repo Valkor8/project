@@ -3,10 +3,6 @@ var iconAfter = document.querySelector(".example__slider-after-icon");
 var iconBefore = document.querySelector(".example__slider-before-icon");
 var imageAfter = document.querySelector(".example__image--after");
 var imageBefore = document.querySelector(".example__image--before");
-var map = document.querySelector(".map__image");
-
-map.classList.remove("map__image-nojs");
-
 
 button.addEventListener("click", function(evt) {
     evt.preventDefault();
