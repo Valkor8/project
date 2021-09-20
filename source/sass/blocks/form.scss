@@ -6,15 +6,11 @@
     li {
         list-style: none;
 
-        &:last-child {
-            margin: 0;
-        }
+
     }
 
     h2 {
         text-transform: initial;
-        font-size: 24px;
-        line-height: 26px;
         font-weight: 400;
     }
 }
@@ -98,20 +94,47 @@
 }
 
 .form__cat-information__item {
+    margin-bottom: 13px;
+
+    &:last-child {
+        margin: 0;
+    }
+    @media (min-width: $tablet-width) {
+        margin-bottom: 20px;
+    }
 
     @media (min-width: $desktop-width) {
         width: 570px;
+
+    }
+}
+
+.form__cat-owner-contacts__item {
+    margin-bottom: 14px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.form__composition__item {
+    margin-bottom: 27px;
+
+    &:last-child {
+        margin: 0;
     }
 }
 
 .form__radio {
     border-top: 1px solid #E7E7E7;
     border-bottom: 1px solid #E7E7E7;
+    margin-bottom: 26px;
 
     @media (min-width: $tablet-width) {
         border: 1px solid #E7E7E7;
         margin-left: 70px;
         margin-right: 66px;
+        margin-bottom: 72px;
 
     }
     @media (min-width: $desktop-width) {
@@ -135,9 +158,13 @@
 
 .form__cat-owner-contacts {
     padding: 0 20px;
+    margin-top: 35px;
+    margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
         padding: 0 66px 0 70px;
+        margin-top: 76px;
+        margin-bottom: 65px;
     }
 
     @media (min-width: $desktop-width) {
@@ -164,10 +191,16 @@
 
     padding-left: 20px;
     padding-right: 23px;
+    margin: 0;
+    // margin-top: 23px;
+    // margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
         padding-left: 40px;
         padding-right: 40px;
+
+        font-size: 36px;
+        line-height: 36px;
     }
 
     @media (min-width: $desktop-width) {
@@ -212,13 +245,15 @@
 
 .form__input-comment {
     margin: 0 20px;
+    margin-top: 37px;
+    margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
-        margin: 0 66px 0 70px;
+        margin: 76px 66px 65px 70px;
     }
 
     @media (min-width: $desktop-width) {
-        margin: 0 110px;
+        margin: inherit 110px;
     }
 }
 
@@ -237,22 +272,25 @@
 .form__composition {
     padding: 0;
     margin: 0 20px;
+    margin-top: 34px;
+    margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
         display: grid;
         grid-template-columns: 2fr 2fr;
 
-        margin: 0 66px 0 70px;
+        margin: 57px 66px 0 70px;
     }
 
     @media (min-width: $desktop-width) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 0 110px;
+        margin: inherit 110px;
     }
 }
 
 
 .form__button {
+
     @media (min-width: $desktop-width) {
         width: 570px;
     }
@@ -265,6 +303,8 @@
     color: #000000;
     text-transform: initial;
 
+    margin-top: 21px;
+    margin-bottom: 32px;
     margin-left: 60px;
 
     @media (min-width: $desktop-width) {
@@ -279,11 +319,11 @@
         display: flex;
         align-items: center;
 
-        margin: 0 66px 0 70px;
+        margin: 0 66px 72px 70px;
     }
 
     @media (min-width: $desktop-width) {
-        margin: 0 110px;
+        margin: inherit 110px;
     }
 }
 
@@ -322,7 +362,6 @@
     position: absolute;
     top: -3px;
     left: 0;
-
 }
 
 .form__radio__label input[type="radio"]:checked + .form__radio__indicator::before {
@@ -337,9 +376,29 @@
     left: calc(50% - 9px);
 }
 
+.form__composition-label {
+    display: flex;
+    align-items: center;
+}
+
 .form__composition__indicator {
+    display: inline-block;
     width: 30px;
     height: 30px;
     border: 1px solid #CDCDCD;
+    margin-right: 18px;
+
+    position: relative;
 }
 
+.form__composition-label input[type="checkbox"]:checked + .form__composition__indicator::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 14px;
+    top: 8px;
+    left: 6px;
+
+    background-image: url(../img/form/checkbox.svg);
+    background-repeat: no-repeat;
+}

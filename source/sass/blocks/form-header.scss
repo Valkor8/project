@@ -1,12 +1,4 @@
 .form-header {
-    h1 {
-        font-size: 36px;
-        line-height: 36px;
-        font-weight: 400;
-    }
-}
-
-.form-header {
     padding: 0 20px;
 
     @media (min-width: $tablet-width) {
@@ -15,5 +7,31 @@
 
     @media (min-width: $desktop-width) {
         padding: 0 110px;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @media (min-width: $tablet-width) {
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 45px;
+        }
+    }
+}
+
+.form-header__p {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 39px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 66px;
     }
 }

@@ -96,6 +96,14 @@
     }
 }
 
+.page-footer__cooperation__wrapper--mod {
+    background-color: #F2F2F2;
+
+    @media (min-width: $desktop-width) {
+        background-color: #ffffff;
+    }
+}
+
 .footer__adress {
     display: block;
 
