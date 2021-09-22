@@ -192,8 +192,6 @@
     padding-left: 20px;
     padding-right: 23px;
     margin: 0;
-    // margin-top: 23px;
-    // margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
         padding-left: 40px;
@@ -218,7 +216,7 @@
         height: 2px;
         background-color: #68B738;
         margin: auto;
-        margin-top: 35px;
+        margin-top: 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -232,7 +230,12 @@
     flex-grow: 1;
 
     margin: auto;
-    margin-top: 35px;
+    margin-top: 15px;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 21px;
+    }
+
 }
 
 .form__h2-contacts {
