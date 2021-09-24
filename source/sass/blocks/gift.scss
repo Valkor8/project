@@ -1,0 +1,29 @@
+.gift {
+    width: 320px;
+    height: 289px;
+    padding: 0 20px;
+    margin: auto;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+        width: 768px;
+        height: 200px;
+        padding: 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 245px;
+        height: 289px;
+    }
+}
+
+.gift__img {
+    width: 100%;
+}
+
+.gift__box {
+    position: absolute;
+     background-color: red;
+     top: 0;
+     left: 0;
+}

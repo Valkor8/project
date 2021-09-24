@@ -17,9 +17,10 @@
     font-weight: 500;
 }
 
+html,
 body,
 *,
-h1, h2, h3 h4, h5 h6 {
+h1, h2, h3, h4, h5, h6 {
     box-sizing: border-box;
 }
 
@@ -87,3 +88,4 @@ input[type="radio"].visually-hidden {
 //catalog.html
 @import "blocks/catalog-main.scss";
 @import "blocks/additional-products.scss";
+@import "blocks/gift.scss";
