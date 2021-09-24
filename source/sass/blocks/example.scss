@@ -52,11 +52,12 @@
     @media (min-width: $tablet-width) {
         font-size: 16px;
         line-height: 24px;
+        margin-bottom: 54px;
     }
 
     @media (min-width: $desktop-width) {
         width: 436px;
-        margin-bottom: 70px;
+        margin-bottom: 69px;
         margin-top: 70px;
     }
 }
@@ -172,9 +173,10 @@
 }
 
 .example__container {
-    padding: 0 20px;
+    min-width: 280px;
+    // padding: 0 20px;
     @media (min-width: $tablet-width) {
-        padding: 0 30px;
+        // padding: 0 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;

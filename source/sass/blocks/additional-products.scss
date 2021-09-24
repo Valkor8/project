@@ -9,6 +9,15 @@
         padding: 26px 38px 28px;
     }
 
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+        border-left: 0;
+        border-right: 0;
+    }
 
 
     p {
@@ -16,7 +25,6 @@
         line-height: 16px;
         text-transform: uppercase;
         margin: 0;
-        // margin-top: 13px;
 
         @media (min-width: $tablet-width) {
             font-size: 20px;
@@ -46,6 +54,11 @@
     @media (min-width: $tablet-width) {
         padding: 0  30px;
     }
+
+    @media (min-width: $desktop-width) {
+        width: 896px;
+        padding: 0;
+    }
 }
 
 .additional-products__table {
@@ -63,16 +76,28 @@
         font-size: 16px;
         line-height: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+        width: 325px;
+        padding-right: 37px;
+        margin: 0;
+        margin-left: auto;
+    }
 }
 
 .catalog-main__button--additional {
     min-width: 280px;
     width: 100%;
     margin: 0;
-    // margin-bottom: 18px;
 
     @media (min-width: $tablet-width) {
         min-width: 632px;
+        padding: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 244px;
+        min-width: 244px;
     }
 }
 
@@ -83,5 +108,21 @@
         align-items: center;
         height: 20px;
         margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 652px;
+        margin: 0;
+    }
+}
+
+.additional-products-and-gift-flex {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 110px;
+        margin-bottom: 86px;
     }
 }
