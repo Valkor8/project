@@ -307,6 +307,15 @@
     text-transform: uppercase;
     color: #444444;
 
+    &:hover,
+    &:focus {
+        background-color: #EBEBEB;
+    }
+
+    &:active {
+        color: rgba(68, 68, 68, 0.3);
+    }
+
     @media (min-width: $tablet-width) {
         width: 249px;
     }

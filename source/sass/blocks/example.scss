@@ -12,7 +12,6 @@
 
         margin: 0;
         margin-bottom: 33px;
-
         @media (min-width: $tablet-width) {
         font-size: 60px;
         line-height: 60px;
@@ -22,10 +21,9 @@
 }
 
 .example__wrapper {
-    margin-top: 27px;
-
+    padding-top: 27px;
     @media (min-width: $tablet-width) {
-        margin-top: 43px;
+        padding-top: 43px;
     }
 }
 
