@@ -126,7 +126,7 @@
     }
 
     @media (min-width: $desktop-width) {
-        background-color: #EAEAEA;
+        background-color: #F2F2F2;
     }
 }
 
@@ -172,9 +172,7 @@
 
 .example__container {
     min-width: 280px;
-    // padding: 0 20px;
     @media (min-width: $tablet-width) {
-        // padding: 0 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -290,8 +288,6 @@
         margin: 0;
     }
 }
-
-
 
 .example__flex {
     @media (min-width: $desktop-width) {

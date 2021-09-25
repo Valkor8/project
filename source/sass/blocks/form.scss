@@ -87,10 +87,38 @@
     }
 }
 
+
+.form__input--e-mail {
+    background-image: url(../../img/form/icon_email.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+
+    &:focus {
+        background-image: url(../../img/form/icon_email_green.svg);
+    }
+}
+
+.form__input--tel {
+    background-image: url(../../img/form/phone.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+
+    &:focus {
+        background-image: url(../../img/form/phone_green.svg);
+    }
+}
+
 .form__input--error {
     border: 2px solid #FF8282;
 }
 
+.form__cat-owner-contacts__label--e-mail .form__input--error {
+    background-image: url(../../img/form/icon_email_red.svg);
+}
+
+.form__cat-owner-contacts__label--tel .form__input--error {
+    background-image: url(../../img/form/phone_red.svg);
+}
 
 .form__cat-information {
     padding: 0 20px;
@@ -358,23 +386,7 @@
 }
 
 .form__radio__indicator {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #CDCDCD;
-    border-radius: 50%;
-    margin-right: 15px;
-    position: relative;
-}
-
-.form__radio__label {
-    cursor: pointer;
-
-    position: relative;
-    padding-left: 45px;
-}
-
-.form__radio__indicator {
+    display: inline-block;
     width: 30px;
     height: 30px;
     border: 1px solid #CDCDCD;
@@ -382,6 +394,18 @@
     position: absolute;
     top: -3px;
     left: 0;
+
+
+    &:hover {
+        border-color: #BABABA;
+    }
+}
+
+.form__radio__label {
+    cursor: pointer;
+
+    position: relative;
+    padding-left: 45px;
 }
 
 .form__radio__label input[type="radio"]:checked + .form__radio__indicator::before {
@@ -399,6 +423,8 @@
 .form__composition-label {
     display: flex;
     align-items: center;
+
+    cursor: pointer;
 }
 
 .form__composition__indicator {
@@ -409,6 +435,10 @@
     margin-right: 18px;
 
     position: relative;
+
+    &:hover {
+        border-color: #BABABA;
+    }
 }
 
 .form__composition-label input[type="checkbox"]:checked + .form__composition__indicator::before {
@@ -423,3 +453,8 @@
     background-repeat: no-repeat;
 }
 
+.input-indicator--disabled,
+input[disabled] + span,
+input[disabled] + span + span {
+    opacity: 0.3;
+}
