@@ -141,6 +141,20 @@
         margin-top: -5px;
     }
 
+    img {
+        width: 36px;
+        height: 50px;
+
+        @media (min-width: $tablet-width) {
+            width: 140px;
+            height: 192px;
+        }
+        @media (min-width: $desktop-width) {
+            width: 70px;
+            height: 97px;
+        }
+    }
+
 }
 
 .diet__icon--pro {
@@ -163,6 +177,23 @@
         top: calc(50% - 28px);
         margin-top: 0;
     }
+
+    img {
+        width: 67px;
+        height: 28px;
+
+        @media (min-width: $tablet-width) {
+            width: 268px;
+            height: 112px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 134px;
+            height: 56px;
+        }
+    }
+
+
 }
 
 .diet__box {
