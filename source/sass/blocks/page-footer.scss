@@ -97,6 +97,12 @@
     }
 }
 
+.page-footer__cooperation:hover .page-footer__cooperation__wrapper {
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}
+
 .page-footer__cooperation__wrapper--mod {
     background-color: #F2F2F2;
 
