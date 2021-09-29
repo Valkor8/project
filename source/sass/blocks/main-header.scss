@@ -149,8 +149,13 @@
 }
 
 .main-header__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 20px;
     margin-top: 302px;
+
+    text-decoration: none;
 
     @media (min-width: $tablet-width) {
         width: 244px;

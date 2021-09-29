@@ -61,8 +61,6 @@
 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 
     background-color: #ffffff;
 
@@ -75,7 +73,7 @@
     }
 
     @media (min-width: $desktop-width) {
-        padding: 0 110px;
+        padding: 0;
 
         position: absolute;
         width: 570px;
@@ -85,14 +83,23 @@
     }
 
     h3 {
+        font-family: "Oswald";
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
+
+        font-size: 20px;
+        line-height: 25px;
 
         text-transform: uppercase;
 
         @media (min-width: $tablet-width) {
             font-size: 20px;
+        }
+
+        @media (min-width: $desktop-width) {
+            margin: 0;
+            margin-right: 87px;
         }
     }
 }
@@ -100,6 +107,19 @@
 .page-footer__cooperation:hover .page-footer__cooperation__wrapper {
     @media (min-width: $desktop-width) {
         display: none;
+    }
+}
+
+.page-footer__cooperation-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (min-width: $desktop-width) {
+        width: 405px;
+        margin-left: 76px;
+        margin-right: 89px;
+        margin-top: 66px;
     }
 }
 
@@ -127,7 +147,7 @@
 .fage-footer__city {
     @media (min-width: $tablet-width) {
         display: block;
-        margin-top: 20px;
+        margin-top: 19px;
     }
 }
 

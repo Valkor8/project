@@ -89,22 +89,22 @@
 
 
 .form__input--e-mail {
-    background-image: url(../../img/form/icon_email.svg);
+    background-image: url(../img/form/icon_email.svg);
     background-repeat: no-repeat;
     background-position: right 20px center;
 
     &:focus {
-        background-image: url(../../img/form/icon_email_green.svg);
+        background-image: url(../img/form/icon_email_green.svg);
     }
 }
 
 .form__input--tel {
-    background-image: url(../../img/form/phone.svg);
+    background-image: url(../img/form/phone.svg);
     background-repeat: no-repeat;
     background-position: right 16px center;
 
     &:focus {
-        background-image: url(../../img/form/phone_green.svg);
+        background-image: url(../img/form/phone_green.svg);
     }
 }
 
@@ -113,11 +113,11 @@
 }
 
 .form__cat-owner-contacts__label--e-mail .form__input--error {
-    background-image: url(../../img/form/icon_email_red.svg);
+    background-image: url(../img/form/icon_email_red.svg);
 }
 
 .form__cat-owner-contacts__label--tel .form__input--error {
-    background-image: url(../../img/form/phone_red.svg);
+    background-image: url(../img/form/phone_red.svg);
 }
 
 .form__cat-information {
